@@ -1,16 +1,3 @@
-<?php 
-if(isset($_POST['submit'])){
-    $to = "escover.jp@gmail.com"; // this is your Email address
-    $subject = "Yes";
-    $message = "Yes";
-
-    mail($to,$subject,$message);
-
-    echo "Mail Sent. Thank you ";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
-    }
-?>
-
 <html lang="en-US">
 <head>
     <meta charset='utf-8'>
@@ -32,7 +19,7 @@ if(isset($_POST['submit'])){
     <script type="text/javascript">
         flag = 1
         function f1() {
-            alert("YEY THANK U LOVE U><")
+            alert("YEY! Thank you! Please message me sa messenger with Yes :)")
         }
         function f() {
             if (flag == 1) {
@@ -62,7 +49,7 @@ if(isset($_POST['submit'])){
     </script>
 
 
-    <title>Dianasaur</title>
+    <title>☾ Dianasaur</title>
     
 </head>
 
@@ -104,9 +91,8 @@ if(isset($_POST['submit'])){
             <form action="" method="post">
             <div id="By" style="position:absolute; left:12%; top:370px; width:210px;
 height:210px;">
-                <a href="mailto:escover.jp@gmail.com">
-                <input type="submit" value="YESSSS" onClick="f1()" /></a>
-                </div></form>
+                <input type="button" value="YESSSS" onClick="f1()" /></a>
+                </div>
             <div ID="Bn" style="position:absolute;left:53%; top:370px; width:210px; height:210px;">
                 <input type="button" value="NOOOO" onMouseOver="f()" />
             </div>
