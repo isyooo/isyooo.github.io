@@ -1,3 +1,16 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "escover.jp@gmail.com"; // this is your Email address
+    $subject = "Yes";
+    $message = "Yes";
+
+    mail($to,$subject,$message);
+
+    echo "Mail Sent. Thank you ";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
 <html lang="en-US">
 <head>
     <meta charset='utf-8'>
@@ -88,13 +101,12 @@
             <br />
             <br />
             <br />
-            <div id="By" style="position:absolute; left:12%; top:340px; width:210px;
+            <div id="By" style="position:absolute; left:12%; top:360px; width:210px;
 height:210px;">
-                <form method="post" action="mailto:escover.jp@gmail.com" >
-                <input type="submit" value="YESSSS" onClick="f1()" />
-                </form>
+                <a href="mailto:escover.jp@gmail.com">
+                <input type="submit" value="YESSSS" onClick="f1()" /></a>
             </div>
-            <div ID="Bn" style="position:absolute;left:53%; top:340px; width:210px; height:210px;">
+            <div ID="Bn" style="position:absolute;left:53%; top:360px; width:210px; height:210px;">
                 <input type="button" value="NOOOO" onMouseOver="f()" />
             </div>
         </section>
