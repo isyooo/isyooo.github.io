@@ -1,4 +1,4 @@
-﻿@import url("non-screen.css") handheld;
+@import url("non-screen.css") handheld;
 @import url("non-screen.css") only screen and (max-device-width: 640px);
 
 @font-face {
@@ -631,3 +631,9 @@ dd {
     .highlight .ss {
         color: #859900
     }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
